@@ -11,13 +11,11 @@ public class NavigationController implements Serializable {
 
 	private static final long serialVersionUID = 1L;
 
+	
+	/* relatórios */
 	public String crudRelatorios() {
 		return "relatorios/crudRelatorios";
 	}
-	
-	public String crudTestes() {
-		return "analiseTestes/sessoesTeste";
-	}	
 	
 	public String novoRelatorio() {
 		return "relatorios/novoRelatorio";
@@ -26,6 +24,20 @@ public class NavigationController implements Serializable {
 	public String editarRelatorio() {
 		return "relatorios/editarRelatorio";
 	}
+	
+	public String escolherTestes() {
+		return "relatorios/escolherTeste";
+	}
+	
+	
+	/*Sessões de teste*/
+	public String crudTestes() {
+		return "analiseTestes/sessoesTeste";
+	}	
+	
+	
+	
+	
 	
 	
 
