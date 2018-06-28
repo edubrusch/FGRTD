@@ -18,7 +18,7 @@ public class NavigationController implements Serializable {
 	}
 	
 	public String novoRelatorio() {
-		return "relatorios/novoRelatorio";
+		return "novoRelatorio";
 	}
 	
 	public String editarRelatorio() {

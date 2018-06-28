@@ -14,9 +14,20 @@
 	<h:outputStylesheet name="css/main.css" />	
 	
 	<h1>= FGRTD =</h1>
+	<p/>
 	
+	<p:commandButton value = "salvar" action="#{navigationController.adTextoRelatorio}" icon= "fa-plus"/><br/><br/>
 	
-	novo relatorio
+	<p:layout style="min-width:400px;min-height:200px;">
+    <p:layoutUnit position="west" resizable="true" size="100" minSize="40" maxSize="200">
+        West
+    </p:layoutUnit>
+ 
+    <p:layoutUnit position="center">
+        <p:commandButton value = "texto" action="#{navigationController.adTextoRelatorio}" icon= "fa-plus"/>
+        <p:commandButton value = "texto" action="#{navigationController.adGraficoRelatorio}" icon= "fa-plus"/><br/>
+    </p:layoutUnit>
+</p:layout>
 	
 
 </h:body>
